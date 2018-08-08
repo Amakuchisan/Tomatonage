@@ -14,8 +14,9 @@ class Player
   def draw
     Window.draw($main_x, $main_y, @img)
   end
-   
-    # def tomato_throw
-    #     Tomato.new
-    # end
+=begin   
+    def tomato_throw
+        Tomato.new
+    end
+=end
 end

@@ -24,6 +24,7 @@ Window.loop do
     obj.move
     obj.draw
   end
+=begin
   # if Input.keyPush?(K_SPACE)
   # # if Input.keyPush?(K_SPACE) == true then
   #   for i in 0..2 do # iを0から9まで変えながらループ
@@ -34,6 +35,7 @@ Window.loop do
   #     end
   #   end
   # end
+=end
   if Input.key_push?(K_SPACE) then
     tmt = tomato.new(tomato_img)
     tmt.move
