@@ -4,7 +4,7 @@ require_relative 'enemy'
 require_relative 'tomato'
 
 Window.width = 512
-Window.height = 384
+Window.height = Window.width / 4 * 3
 background = Image.load('images/green.png')
 
 objects = []
