@@ -3,8 +3,8 @@ require_relative 'player'
 require_relative 'enemy'
 require_relative 'tomato'
 
-Window.width = 1024
-Window.height = 768
+Window.width = 512
+Window.height = 384
 background = Image.load('images/green.png')
 
 objects = []
