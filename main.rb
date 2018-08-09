@@ -11,7 +11,7 @@ objects = []
 objects << Player.new
 img = Image.load('images/lemon.png')
 # objects << Enemy.new(rand(1024), rand(768), img)
-objects << Enemy.new(860, rand(768), img)
+objects << Enemy.new(430, rand(430*3/4), img)
 #spaceの回数.times do~~
 # tomato << Tomato.new#ここのトマト新規作成times?
 tomato_img = Image.load('images/tomato.png')
