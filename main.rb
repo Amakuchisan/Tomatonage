@@ -38,6 +38,8 @@ Window.loop do
 =end
   if Input.key_push?(K_SPACE) then
     tmt = tomato.new(tomato_img)
+  if Input.key_push?(K_SPACE)
+    tmt = Tomato.new(tomato_img)
     tmt.move
     tmt.draw
   end
