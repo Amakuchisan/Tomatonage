@@ -17,6 +17,7 @@ objects << Enemy.new(430, rand(430*3/4), img)
 tomato_img = Image.load('images/tomato.png')
 # tomato = []
 
+tmt = Tomato.new(tomato_img)
 Window.loop do
   Window.draw(0,0,background)
   break if Input.key_push?(K_ESCAPE)
@@ -24,23 +25,11 @@ Window.loop do
     obj.move
     obj.draw
   end
-=begin
-  # if Input.keyPush?(K_SPACE)
-  # # if Input.keyPush?(K_SPACE) == true then
-  #   for i in 0..2 do # iを0から9まで変えながらループ
-  #     if $tomato_x.to_i <= 1024 then #書き方
-  #       $tomato_x += 1
-  #       # $tomato_y[i] += 1
-  #       break # 弾を飛ばしたらループを中断する
-  #     end
-  #   end
-  # end
-=end
-  if Input.key_push?(K_SPACE) then
-    tmt = tomato.new(tomato_img)
+
   if Input.key_push?(K_SPACE)
-    tmt = Tomato.new(tomato_img)
-    tmt.move
-    tmt.draw
+    tmt.nage
+    # tmt.draw
   end
+    # tmt.move
+    # tmt.draw
 end
