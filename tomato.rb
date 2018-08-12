@@ -1,4 +1,5 @@
 class Tomato
+  @@speed = 3
   def initialize(img)
     @img = img
   end
