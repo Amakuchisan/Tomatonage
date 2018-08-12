@@ -17,11 +17,13 @@ Window.loop do
   man.draw
   enemy.move
   enemy.draw
-
   if Input.key_push?(K_SPACE)
-    tmt.nage
-    # tmt.draw
+    $flug = 0
+    tmt.position
   end
-    # tmt.move
-    # tmt.draw
+  #loop?
+  # while $flug == 0
+  tmt.nage
+  # tmt.draw
+  # end
 end
