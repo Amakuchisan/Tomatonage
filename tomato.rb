@@ -6,7 +6,7 @@ class Tomato
   
   def position
     @tomato_x = $main_x+15
-    @tomato_y = $main_y+5#koko
+    @tomato_y = $main_y+5
   end
 
   def nage
@@ -18,10 +18,4 @@ class Tomato
       end
     end
   end
-  
-  # def draw
-  #   while $flug == 0
-  #   Window.draw(@tomato_x, @tomato_y, @img)
-  #   end
-  # end
 end

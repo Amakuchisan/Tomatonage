@@ -21,9 +21,5 @@ Window.loop do
     $flug = 0
     tmt.position
   end
-  #loop?
-  # while $flug == 0
   tmt.nage
-  # tmt.draw
-  # end
 end
