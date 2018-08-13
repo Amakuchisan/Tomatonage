@@ -17,7 +17,7 @@ Window.loop do
   man.draw
   enemy.move
   enemy.draw
-  if Input.key_push?(K_SPACE)
+  if Input.key_push?(K_SPACE) && $flug != 0
     $flug = 0
     tmt.position
   end
