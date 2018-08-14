@@ -1,21 +1,19 @@
-class Tomato
+class Tomato < Sprite
   @@speed = 3
-  def initialize(img)
-    @img = img
+  def initialize(*args)
+    super(*args)
+    # @img = img
   end
   
   def position
-    @tomato_x = $main_x+15
-    @tomato_y = $main_y+5
+    self.x = $main_x+15
+    self.y = $main_y+5
   end
 
   def nage
-    if $flug == 0
-      @tomato_x += 1*@@speed
-      Window.draw(@tomato_x, @tomato_y, @img)
-      if @tomato_x > 420
-        $flug = 1
-      end
-    end
+      self.x += 1*@@speed
+      # @tomato_x += 1*@@speed
+      # Window.draw(@tomato_x, @tomato_y, @img)
+    # end
   end
 end
