@@ -1,17 +1,13 @@
-class Player
-  def initialize
-    @img = Image.load('images/man.png')
-    # @imgl = Image.load('images/manl/png')#左むいた時用
-    $main_x = 150
-    $main_y = 150
+class Player < Sprite
+  def initialize(*args)
+    super(*args)
+    $man_speed = 1
   end
     
-  def move
-    $main_x += Input.x
-    $main_y += Input.y
-  end
-
-  def draw
-    Window.draw($main_x, $main_y, @img)
+  def update
+    self.x += Input.x*$man_speed
+    self.y += Input.y*$man_speed
+    $player_x = self.x
+    $player_y = self.y
   end
 end

@@ -1,4 +1,4 @@
-class Tomato < Sprite
+class Tomato < Player
   @@speed = 3
   def initialize(*args)
     super(*args)
@@ -6,8 +6,8 @@ class Tomato < Sprite
   end
   
   def position
-    self.x = $main_x+15
-    self.y = $main_y+5
+    self.x = $player_x+15
+    self.y = $player_y+5
   end
 
   def nage

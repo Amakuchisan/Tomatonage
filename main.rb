@@ -12,7 +12,8 @@ explain = Image.load('images/explain.png')
 ending = Image.load('images/ending.png')
 otsukare = Image.load('images/otsukare.png')
 
-man = Player.new
+man_img = Image.load('images/man.png')
+man = Player.new(100, 100, man_img)
 img = Image.load('images/lemon.png') 
 enemy = Sprite.new(430, rand(Window.height-40), img)
 tmt_img = Image.load('images/tomato.png')
@@ -52,9 +53,10 @@ end
 if flag == 1
   Window.loop do
     Window.draw(0,0,background)
+    
     Window.draw_font(0, 0, "#{count_down/60}", font)
     break if Input.key_push?(K_ESCAPE) || flag == 2
-    man.move
+    man.update
     man.draw
     enemy.draw
     if Input.key_push?(K_SPACE) && flag != 0
