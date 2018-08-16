@@ -2,7 +2,6 @@ class Tomato < Player
   @@speed = 3
   def initialize(*args)
     super(*args)
-    # @img = img
   end
   
   def position
@@ -12,8 +11,5 @@ class Tomato < Player
 
   def nage
       self.x += 1*@@speed
-      # @tomato_x += 1*@@speed
-      # Window.draw(@tomato_x, @tomato_y, @img)
-    # end
   end
 end
